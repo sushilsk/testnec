@@ -8,6 +8,11 @@ var stringify = require('json-stringify');
 var redisClient = redis.createClient();
 
 
+exports.hellotest = function(req , res)
+{
+	res.send("hello worls");
+}
+
 exports.list_all_tasks = function(req, res) {
 	var myResults = new Array();
 	var formmatedResult = new Array();

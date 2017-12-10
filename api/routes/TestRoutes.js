@@ -18,6 +18,9 @@
   app.route('/template/:imagekey')
     .get(testList.read_one);
 
+  app.route('/Hello')
+     .get(testList.hellotest);
+
   //app.route('/n2nSearch')
     //.post(testList.read_many);
 
