@@ -21,6 +21,8 @@
   app.route('/Hello')
      .get(testList.hellotest);
 
+  app.route('/')
+    .get(testList.dummy);
   //app.route('/n2nSearch')
     //.post(testList.read_many);
 

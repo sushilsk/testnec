@@ -5,8 +5,13 @@ var redis = require('redis');
 bluebird.promisifyAll(redis.RedisClient.prototype);
 bluebird.promisifyAll(redis.Multi.prototype);
 var stringify = require('json-stringify');
-var redisClient = redis.createClient();
+//var redisClient = redis.createClient();
 
+
+exports.dummy = function(req,res)
+{
+	res.send("this is the dummy response");
+}
 
 exports.hellotest = function(req , res)
 {
