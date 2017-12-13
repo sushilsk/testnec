@@ -2,9 +2,12 @@
   "name": "nectest1",
   "version": "1.0.0",
   "description": "test redis performance",
-  "main": "server.js",
+  "main": "./server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "engines": {
+    "node": "~0.10.22"
   },
   "keywords": [
     "Restful",

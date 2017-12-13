@@ -4,11 +4,13 @@
 //  require('dotenv').load();
 //}
 
-var express = require('express'),
-app = express(),
-port = process.env.PORT || 3000;
+'use strict';
+
+var express = require('express');
+var app = express();
+var port = process.env.PORT || 3000;
 const CONCURRENCY = process.env.WEB_CONCURRENCY || 1;
-bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
